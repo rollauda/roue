@@ -14,9 +14,9 @@
 	<div style="text-align: center;">
 		<select id="classe-select">
 			<option value="">Choisir une classe</option>
-			<option value="TG1" selected="selected">TG1</option>
-			<option value="TG2">TG2</option>
-			<option value="TG3">TG3</option>
+			<option value="TA" selected="selected">TA</option>
+			<option value="TB">TB</option>
+			<option value="TC">TC</option>
 		</select>
 		<button id="start-button">Démarrer la roue</button><button id="continue-button">Relancer sans l'élève</button>
 	</div>
@@ -39,9 +39,9 @@
     <div id="led-strip-bottom"></div>
 	<script>
 		const elevesParClasse = {
-		"TG1": ["Noémie", "Lucas", "Clément", "Manon", "Antoine", "Aurélie", "Maeva", "Léa", "Raphaël", "Eva", "Arthur", "Louis", "Enzo", "Hugo", "Sofia", "Mélissa", "Julia", "Lucien", "Lysandre", "Lucas", "Alicia", "Sylvie", "Nathan", "Léo", "Pauline", "Lilou", "Mathis", "Ambre", "Léna", "Emeline"],
-		"TG2": ["Alexandre", "Bastien", "Céline", "David", "Eva", "Florian", "Gabin", "Hugo", "Inès", "Jérôme", "Kelly", "Laure", "Mickaël", "Nina", "Océane", "Pierre", "Quentin", "Romain", "Sarah", "Tristan", "Victor", "Xavier", "Yannick", "Zoé", "Aurélien", "Brigitte", "Camille", "Dorian", "Emilie"],
-            "TG3": ["Alexis", "Bérénice", "Céline", "Dimitri", "Elise", "Fanny", "Guillaume", "Hugo", "Isabelle", "Jean", "Kim", "Léonie", "Maxime", "Nathan", "Ophélie", "Pascal", "Quentin", "Raphaël", "Stéphanie", "Théo", "Ulrich", "Victoire", "William", "Xavier", "Yann", "Zoé", "Arnaud", "Béatrice", "Célia", "David", "Estelle"]
+		"TA": ["Noémie", "Lucas", "Clément", "Manon", "Antoine", "Aurélie", "Maeva", "Léa", "Raphaël", "Eva", "Arthur", "Louis", "Enzo", "Hugo", "Sofia", "Mélissa", "Julia", "Lucien", "Lysandre", "Lucas", "Alicia", "Sylvie", "Nathan", "Léo", "Pauline", "Lilou", "Mathis", "Ambre", "Léna", "Emeline"],
+		"TB": ["Alexandre", "Bastien", "Céline", "David", "Eva", "Florian", "Gabin", "Hugo", "Inès", "Jérôme", "Kelly", "Laure", "Mickaël", "Nina", "Océane", "Pierre", "Quentin", "Romain", "Sarah", "Tristan", "Victor", "Xavier", "Yannick", "Zoé", "Aurélien", "Brigitte", "Camille", "Dorian", "Emilie"],
+            "TC": ["Alexis", "Bérénice", "Céline", "Dimitri", "Elise", "Fanny", "Guillaume", "Hugo", "Isabelle", "Jean", "Kim", "Léonie", "Maxime", "Nathan", "Ophélie", "Pascal", "Quentin", "Raphaël", "Stéphanie", "Théo", "Ulrich", "Victoire", "William", "Xavier", "Yann", "Zoé", "Arnaud", "Béatrice", "Célia", "David", "Estelle"]
 	};
 	const canvas = document.getElementById("roulette");
 	const ctx = canvas.getContext("2d");
