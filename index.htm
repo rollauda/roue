@@ -16,7 +16,7 @@
 			<option value="">Choisir une classe</option>
 			<option value="TA" selected="selected">TA</option>
 			<option value="TB">TB</option>
-			<option value="TC">TC</option>
+			<option value="HLP">HLP</option>
 		</select>
 		<button id="start-button">Démarrer la roue</button><button id="continue-button">Relancer sans l'élève</button>
 	</div>
@@ -39,9 +39,9 @@
     <div id="led-strip-bottom"></div>
 	<script>
 		const elevesParClasse = {
-		"TA": ["Noémie", "Lucas", "Clément", "Manon", "Antoine", "Aurélie", "Maeva", "Léa", "Raphaël", "Eva", "Arthur", "Louis", "Enzo", "Hugo", "Sofia", "Mélissa", "Julia", "Lucien", "Lysandre", "Lucas", "Alicia", "Sylvie", "Nathan", "Léo", "Pauline", "Lilou", "Mathis", "Ambre", "Léna", "Emeline"],
-		"TB": ["Alexandre", "Bastien", "Céline", "David", "Eva", "Florian", "Gabin", "Hugo", "Inès", "Jérôme", "Kelly", "Laure", "Mickaël", "Nina", "Océane", "Pierre", "Quentin", "Romain", "Sarah", "Tristan", "Victor", "Xavier", "Yannick", "Zoé", "Aurélien", "Brigitte", "Camille", "Dorian", "Emilie"],
-            "TC": ["Alexis", "Bérénice", "Céline", "Dimitri", "Elise", "Fanny", "Guillaume", "Hugo", "Isabelle", "Jean", "Kim", "Léonie", "Maxime", "Nathan", "Ophélie", "Pascal", "Quentin", "Raphaël", "Stéphanie", "Théo", "Ulrich", "Victoire", "William", "Xavier", "Yann", "Zoé", "Arnaud", "Béatrice", "Célia", "David", "Estelle"]
+		"TA": ["Éleve 1", "Éleve 2", "Éleve 3", "Éleve 4", "Éleve 5", "Éleve 6", "Éleve 7", "Éleve 8", "Éleve 9", "Éleve 10", "Éleve 11", "Éleve 12", "Éleve 13", "Éleve 14", "Éleve 15", "Éleve 16", "Éleve 17", "Éleve 18", "Éleve 19", "Éleve 20", "Éleve 21", "Éleve 22", "Éleve 23", "Éleve 24", "Éleve 25", "Éleve 26", "Éleve 27", "Éleve 28"],
+		"TB": ["Éleve 1", "Éleve 2", "Éleve 3", "Éleve 4", "Éleve 5", "Éleve 6", "Éleve 7", "Éleve 8", "Éleve 9", "Éleve 10", "Éleve 11", "Éleve 12", "Éleve 13", "Éleve 14", "Éleve 15", "Éleve 16", "Éleve 17", "Éleve 18", "Éleve 19", "Éleve 20", "Éleve 21", "Éleve 22", "Éleve 23", "Éleve 24", "Éleve 25", "Éleve 26", "Éleve 27", "Éleve 28"],
+        "HLP": ["Éleve 1", "Éleve 2", "Éleve 3", "Éleve 4", "Éleve 5", "Éleve 6", "Éleve 7", "Éleve 8", "Éleve 9", "Éleve 10", "Éleve 11", "Éleve 12", "Éleve 13", "Éleve 14", "Éleve 15"]
 	};
 	const canvas = document.getElementById("roulette");
 	const ctx = canvas.getContext("2d");
