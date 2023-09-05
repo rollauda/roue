@@ -17,6 +17,7 @@
 			<option value="TA" selected="selected">TA</option>
 			<option value="TB">TB</option>
 			<option value="HLP">HLP</option>
+            <option value="CAV">CAV</option>
 		</select>
 		<button id="start-button">Démarrer la roue</button><button id="continue-button">Relancer sans l'élève</button>
 	</div>
@@ -41,7 +42,8 @@
 		const elevesParClasse = {
 		"TA": ["Sami Avila", "Manuela Burbano", "Daniel Carrera", "Andrés Chassier", "Maria Piedad Dávila", "Juan Pablo Echeverria", "Carla Espindola", "Elise Fiallos", "Emilia Galarza", "Galis García", "Rafael Gomez", "Julian Granja", "Philippe Obiol", "Gabriela Padilla", "Juan Felipe Pesantes", "José Ricardo Ramírez", "Domenica Romero", "Kian Royère", "Rommina Rueda", "Anahí Silva", "Juliana Terán", "Suzanne Vazquez", "Alexis Vélez"],
 		"TB": ["Esteban Albán", "David Arciniega", "Malena Bahamonde", "Rebeca Benaim", "Emily Bonilla", "Emilio Cerbino", "Isaïa Champetier", "Floreencia Colman", "Aarón Echeverría", "Anahí Garcès", "Oscar Guerra", "Eduarda Jarrín", "Briana Jegou", "Amélie Larco", "Joaquín León", "Fernanda López", "Atalia Negrete", "Matias Parreño", "Camila Puyol", "Télio Rochas", "Elias Rueda", "Berenice Sáenz", "Nicolás Silva", "Carlos Luis Viteri"],
-        "HLP": ["Emly Bonilla", "Astrid Echeverría", "Elise Fiallos", "Emilia Galarza", "Briana Jegou", "Amélie Larco", "Joaquín León", "Salomé Riofrío", "Daniela Suquillo", "Julián Vergara"]
+        "HLP": ["Emily Bonilla", "Astrid Echeverría", "Elise Fiallos", "Emilia Galarza", "Briana Jegou", "Amélie Larco", "Joaquín León", "Salomé Riofrío", "Daniela Suquillo", "Julián Vergara"]
+        "CAV": ["Dominique Ayala", "Leonardo Bravo", "Amelia Carrion", "Sara Clavijo", "Antonella Del Valle", "Domenica Espinosa", "Brianna Estrella", "Thomas Hamilton", "Emilia Hidalgo", "Michelle Pinzon", "Nicole Rubio", "Ariana Trujillo", "Gabriel Valarezo", "Bianca Verdu"]
 	};
 	const canvas = document.getElementById("roulette");
 	const ctx = canvas.getContext("2d");
