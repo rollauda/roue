@@ -18,6 +18,7 @@
 			<option value="TB">TB</option>
 			<option value="HLP">HLP</option>
             <option value="CAV">CAV</option>
+            <option value="DGEMC">DGEMC</option>
 		</select>
 		<button id="start-button">Démarrer la roue</button><button id="continue-button">Relancer sans l'élève</button>
 	</div>
@@ -40,10 +41,11 @@
     <div id="led-strip-bottom"></div>
 	<script>
 		const elevesParClasse = {
-		"TA": ["Sami Avila", "Manuela Burbano", "Daniel Carrera", "Andrés Chassier", "Maria Piedad Dávila", "Juan Pablo Echeverria", "Carla Espindola", "Elise Fiallos", "Emilia Galarza", "Galis García", "Rafael Gomez", "Julian Granja", "Philippe Obiol", "Gabriela Padilla", "Juan Felipe Pesantes", "José Ricardo Ramírez", "Domenica Romero", "Kian Royère", "Rommina Rueda", "Anahí Silva", "Juliana Terán", "Suzanne Vazquez", "Alexis Vélez"],
-		"TB": ["Esteban Albán", "David Arciniega", "Malena Bahamonde", "Rebeca Benaim", "Emily Bonilla", "Emilio Cerbino", "Isaïa Champetier", "Floreencia Colman", "Aarón Echeverría", "Anahí Garcès", "Oscar Guerra", "Eduarda Jarrín", "Briana Jegou", "Amélie Larco", "Joaquín León", "Fernanda López", "Atalia Negrete", "Matias Parreño", "Camila Puyol", "Télio Rochas", "Elias Rueda", "Berenice Sáenz", "Nicolás Silva", "Carlos Luis Viteri"],
+		"TA": ["Sami Avila", "Manuela Burbano", "Daniel Carrera", "Andrés Chassier", "Maria Piedad Dávila", "Juan Pablo Echeverria", "Carla Espindola", "Emilia Galarza", "Galis García", "Rafael Gomez", "Julian Granja", "Philippe Obiol", "Gabriela Padilla", "Juan Felipe Pesantes", "José Ricardo Ramírez", "Domenica Romero", "Kian Royère", "Rommina Rueda", "Anahí Silva", "Juliana Terán", "Suzanne Vazquez", "Alexis Vélez"],
+		"TB": ["Esteban Albán", "David Arciniega", "Malena Bahamonde", "Rebeca Benaim", "Emily Bonilla", "Emilio Cerbino", "Isaïa Champetier", "Floreencia Colman", "Aarón Echeverría", "Elise Fiallos", "Anahí Garcès", "Eduarda Jarrín", "Briana Jegou", "Amélie Larco", "Joaquín León", "Fernanda López", "Atalia Negrete", "Matias Parreño", "Camila Puyol", "Télio Rochas", "Elias Rueda", "Berenice Sáenz", "Nicolás Silva", "Carlos Luis Viteri"],
         "HLP": ["Emily Bonilla", "Astrid Echeverría", "Elise Fiallos", "Emilia Galarza", "Briana Jegou", "Amélie Larco", "Joaquín León", "Salomé Riofrío", "Daniela Suquillo", "Julián Vergara"],
-        "CAV": ["Dominique Ayala", "Leonardo Bravo", "Amelia Carrion", "Sara Clavijo", "Antonella Del Valle", "Domenica Espinosa", "Brianna Estrella", "Thomas Hamilton", "Emilia Hidalgo", "Michelle Pinzon", "Nicole Rubio", "Ariana Trujillo", "Gabriel Valarezo", "Bianca Verdu"]
+        "CAV": ["Dominique Ayala", "Leonardo Bravo", "Amelia Carrion", "Sara Clavijo", "Antonella Del Valle", "Domenica Espinosa", "Brianna Estrella", "Thomas Hamilton", "Emilia Hidalgo", "Michelle Pinzon", "Nicole Rubio", "Lyna Taazibt", "Ariana Trujillo", "Gabriel Valarezo", "Bianca Verdu"]
+        "DGEMC": ["Sophia Caiza", "Isaia Champetier", "Maria Piedad Davila", "Aaron Echeverria", "Emilia Galarza", "Anahi Garces", "Rafael Gomez", "Joaquin Leon", "José Ricardo Ramirez", "Salomé Riofrio", "Maria Emilia Rognon", "Doménica Romero", "Berenice Saenz", "Nicolas Silva", "Dniela Suquillo", "Suzanne Vazquez"]
 	};
 	const canvas = document.getElementById("roulette");
 	const ctx = canvas.getContext("2d");
